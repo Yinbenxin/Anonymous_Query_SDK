@@ -11,9 +11,9 @@
 #include "pir_server.h"
 namespace py = pybind11;
 using namespace pybind11::literals;
-// Base64 编码函数
 
-int secret_params= 4096;
+
+int secret_params= 4096;//secret params only for 4096.
 
 
 std::string gen_sk(){
