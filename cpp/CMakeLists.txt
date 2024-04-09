@@ -10,15 +10,16 @@ include_directories(${GTEST_INCLUDE_DIRS})
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/bin)
 include_directories(
         pir/include
+        pir/thirdparty
         faker/include
-        interface
+#        interface
 )
 
 add_subdirectory(faker)
 add_subdirectory(pir)
 add_subdirectory(swig-go)
 add_subdirectory(swig-java)
-
+add_subdirectory(swig-python)
 
 set(LIBNAME "pirface")
 
