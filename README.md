@@ -83,4 +83,8 @@ DYLD_LIBRARY_PATH="${your lib path}";CGO_LDFLAGS="-L${your lib path} -lpir-go-ar
 cp cjava/libpir-java-arm64.dylib ../java/resource
 cp cjava 中其他文件到java/src/pir中
 ```
-
+#### python测试
+```bash
+cp cpython/seal.cpython.so ../python
+#cp 到需要调用的python中执行即可。
+```
